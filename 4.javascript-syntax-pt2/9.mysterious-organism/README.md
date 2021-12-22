@@ -46,7 +46,7 @@ In the returned object of `pAequorFactory()`, add another method `.willLikelySur
 
 `.willLikelySurvive()` returns `true` if the object’s `.dna` array contains at least 60% `'C'` or `'G'` bases. Otherwise, `.willLikelySurvive()` returns false.
 
-### Step 7
+### Step 6
 With the factory function set up, your team requests that you create 30 instances of `pAequor` that can survive in their natural environment. Store these instances in an array for your team to study later.
 
 ## Running this Project
