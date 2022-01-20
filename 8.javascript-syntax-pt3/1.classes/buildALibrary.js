@@ -72,6 +72,24 @@ class Movie extends Media {
 }
 
 
+class CD extends Media {
+    constructor(artist, title, songs) {
+        super(title);
+        this._artist = artist;
+        this._songs = songs;
+    }
+
+    get artist() {
+        return this._artist;
+    }
+
+    get songs() {
+        return this._songs;
+    }
+
+}
+
+
 const historyOfEverything = new Book('Bill Bryson', 'A Short History of Nearly Everything', 544);
 
 historyOfEverything.toggleCheckOutStatus();
@@ -92,3 +110,15 @@ speed.addRating(1);
 speed.addRating(1);
 speed.addRating(5);
 console.log(speed.getAverageRating());
+
+
+const modernLove = new CD('Multiple Artists', 'Modern Love', ['Life on Mars', 'Sound and Vision', 'Right']);
+console.log(modernLove.isCheckedOut);
+
+console.log(modernLove.artist);
+console.log(modernLove.songs);
+
+modernLove.addRating(5);
+modernLove.addRating(5);
+modernLove.addRating(5);
+console.log(modernLove.getAverageRating());
